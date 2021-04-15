@@ -122,4 +122,10 @@ ul li:last-child {
   ul li {
     width: 13%;
   }
+  ul li:last-child {
+    width: 37.5%;
+    margin-top: -48px;
+    position: relative;
+    left: 64px;
+  }
 }
