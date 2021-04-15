@@ -1,0 +1,125 @@
+/* General Rules */
+@import url("https://fonts.googleapis.com/css2?family=Share&display=swap");
+html,
+body {
+  height: 100%;
+}
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7c7c7c+1,000000+100 */
+  background: #7c7c7c; /* Old browsers */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #7c7c7c 0%,
+    #000000 100%
+  ); /* FF3.6-15 */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #7c7c7c 0%,
+    #000000 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(
+    ellipse at center,
+    #7c7c7c 0%,
+    #000000 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c7c7c', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+/* Styling Calculator */
+.calculator {
+  background: #353535;
+  padding: 15px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 6px 0 #a1a1a1, 0 8px 10px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+.result {
+  height: 50px;
+  background: #cecfac;
+  color: #3b3b32;
+  width: 90%;
+  line-height: 50px;
+  margin: 8px 0px 20px 10px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 34px;
+  overflow: hidden;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5), inset 0 2px 0 #a1a1a1;
+}
+ul li {
+  background: #4e4e4e;
+  padding: 10px;
+  width: 15%;
+  color: #fff;
+  float: left;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 0 5px 0 #a5a5a5, 0 2px 5px rgba(0, 0, 0, 0.75);
+  font-family: "Share", cursive;
+}
+ul li:active {
+  position: relative;
+  top: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+ul li:first-child {
+  background: #393939;
+}
+ul li:nth-child(2) {
+  background: #393939;
+}
+ul li:nth-child(3),
+ul li:nth-child(4),
+ul li:nth-child(8),
+ul li:nth-child(12) {
+  background: #222;
+}
+
+ul li:nth-child(16) {
+  height: 75px;
+  line-height: 75px;
+  background: #f32a3d;
+}
+ul li:nth-child(17) {
+  margin-top: -48px;
+}
+ul li:last-child {
+  width: 40%;
+  margin-top: -48px;
+  position: relative;
+  left: 75px;
+}
+.signature {
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: right;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  z-index: -1;
+  font-family: "Share", cursive;
+}
+@media (max-width: 400px) {
+  .calculator {
+    width: 250px;
+  }
+  ul li {
+    width: 13%;
+  }
+}
